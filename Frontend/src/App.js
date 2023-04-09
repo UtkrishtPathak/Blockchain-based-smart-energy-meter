@@ -18,9 +18,9 @@ function App()
   {
     const ganacheUrl = 'http://localhost:7545'; // Update with your Ganache URL
     const provider = new ethers.providers.JsonRpcProvider(ganacheUrl);
-    const privateKey = '0x1fdc6bfced6c9f5de268a1b8af04e29159946b63b4a18c3083d13853968029ae'; // Replace with your private key
+    const privateKey = '0xe008391a04bc5c166df6d404c612742208bbe334b6c087212c39de9c6337df79'; // Replace with your private key
     const signer = new ethers.Wallet(privateKey, provider);
-    const RemixContract = new ethers.Contract("0xe80c9EA87adC93e3F9dacD7d069b77be393aE307", ContractABI, signer); //Replace with the block address where smart contract is deployed
+    const RemixContract = new ethers.Contract("0xC669c885E698247f602D1A0e58437Cc381DF465c", ContractABI, signer); //Replace with the block address where smart contract is deployed
     for( let key in RemixContract)
       {
         contract[key] = RemixContract[key];

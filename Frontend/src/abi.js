@@ -113,6 +113,65 @@ export const ContractABI =
 				"internalType": "address",
 				"name": "_acc",
 				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_cpu",
+				"type": "uint256"
+			}
+		],
+		"name": "setCostPerUnit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_acc",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_producerAcc",
+				"type": "address"
+			}
+		],
+		"name": "setProducer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_consumerAcc",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_producerAcc",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "money",
+				"type": "uint256"
+			}
+		],
+		"name": "transferMoneyEnergy",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_acc",
+				"type": "address"
 			}
 		],
 		"name": "getAllCustomers",
@@ -265,65 +324,6 @@ export const ContractABI =
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_acc",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_cpu",
-				"type": "uint256"
-			}
-		],
-		"name": "setCostPerUnit",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_acc",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "_producerAcc",
-				"type": "address"
-			}
-		],
-		"name": "setProducer",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_consumerAcc",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "_producerAcc",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "money",
-				"type": "uint256"
-			}
-		],
-		"name": "transferMoneyEnergy",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	}
 ]
